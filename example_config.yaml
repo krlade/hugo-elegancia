@@ -9,7 +9,7 @@ description: OneLou
 paginate: 10
 hasCJKLanguage: true
 languageCode: 'en-us'
-theme: # "hugo-theme-onelou"
+theme: # "hugo-elegancia"
 params:
   author: 'Me'
   opengraph:
@@ -21,12 +21,8 @@ params:
     twitter: 'https://twitter.com'
     facebook: 'https://facebook.com'
   footer:
-    hidePowered: false # Powered by Hugo & theme OneLou
-    beian: # ICP备案号
-    gongan:
-      # code: 公安备案号XXXX
-      # txt: 京公网安备XXXX号
-    since: 2022
+    hidePowered: false # Powered by Hugo & Elegancia
+    since: 2023
     copyright: XXX
   prefix:
     h2: "※ "
