@@ -11,6 +11,7 @@ hasCJKLanguage: true
 languageCode: 'en-us'
 theme: # "hugo-theme-onelou"
 params:
+  author: 'Me'
   opengraph:
     github: 'https://github.com/jyygithub'
     gitee: 'https://gitee.com/'
