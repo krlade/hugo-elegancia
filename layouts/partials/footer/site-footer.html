@@ -5,9 +5,11 @@
         {{ if not .Site.Params.footer.hidePowered }}
         <label>Powered by <a href="https://gohugo.io/">Hugo</a> & theme <a href="https://github.com/jyygithub/hugo-theme-onelou">OneLou</a></label>
         {{ end }}
-        <label>© {{ .Site.Params.footer.since }}
-            {{if compare.Ne Site.Params.footer.since now.Time "2006"}}
-                -{{ .Site.Params.footer.copyright }}
+        <label>© {{ .Site.Params.footer.since}}
+            {{$first_year := ne .Site.Params.footer.since time.Now.Year}}
+            {{if $first_year}}
+                - {{time.Now.Year}}
+                {{ .Site.Params.footer.copyright }}
             {{end}}
         </label>
     </div>

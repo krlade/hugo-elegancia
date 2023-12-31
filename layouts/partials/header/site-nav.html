@@ -2,7 +2,9 @@
 <div class="site-nav">
     {{ range .Site.Menus.navs }}
     <a href="{{ .URL }}">
+        {{if .Params.img}}
         <img src="{{ .Params.img }}" alt="">
+        {{end}}
         {{ .Name }}
     </a>
     {{ end }}
