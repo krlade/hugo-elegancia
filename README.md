@@ -1,4 +1,7 @@
-# Hugo Theme OneLou
+# Hugo Elegancia
+
+This theme is a fork of https://github.com/jyygithub/hugo-theme-onelou.
+It's currently in the early development.
 
 ## Demo
 
