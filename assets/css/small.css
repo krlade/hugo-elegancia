@@ -24,6 +24,7 @@
 }
 
 .center_home h1 {
+    font-size: 3rem;
     padding: 0;
     margin: 0;
 }
@@ -43,7 +44,8 @@
     text-decoration: none;
     padding: 0.75em 1.75em 0.75em 1.5em;
     border-radius: 1.5em;
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
     font-weight: bold;
     text-align: center;
