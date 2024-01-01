@@ -59,6 +59,7 @@
 .site-nav img {
     width: 1.75em;
     height: 1.75em;
+    border-radius: 0.8em;
     margin: 0 0.5em 0 0;
     padding: 0;
 }

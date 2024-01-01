@@ -214,36 +214,38 @@ body {
     border: 1px solid transparent;
 }
 
-.copyright {
-    opacity: 0.25;
-    bottom: 0.5em;
-    position: absolute;
-    left: 5%;
-    right: 5%;
+footer {
+    padding: 1em 0;
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
     font-size: 0.75rem;
+    background-color: var(--content-background-color);
     color: var(--font-color);
 }
 
-.copyright .motto {
+footer .motto {
     font-family: var(--motto-font-family);
 }
 
-.copyright div {
+footer div {
     text-align: center;
 }
 
-.copyright a {
+footer a {
     color: var(--font-color);
     text-decoration: none;
 }
 
-.copyright a:hover {
+footer a:hover {
     color: white;
 }
 
-.copyright img {
-    width: 1em;
-    height: 1em;
+.absolute-footer {
+    background-color: initial;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .contents_title a {

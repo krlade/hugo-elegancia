@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class='theme-container'>
+<html lang="{{default .Site.LanguageCode .Language }}">
 
 <head>
     <meta charset='utf-8'>
@@ -33,15 +33,13 @@
     hljs.highlightAll();
 </script>
 <body>
-{{ if not .IsHome }}
+{{ if and (not .IsHome) (ne .RelPermalink "/404.html") }}
 {{ partial "header/nav" . }}
 {{ end }}
-<div id="center" class='center' {{ if .IsHome }} style="background: transparent;padding:1%" {{ end }}>
+<div class='center' {{ if or (.IsHome) (eq .RelPermalink "/404.html") }} style="background: transparent;padding:1%" {{ end }}>
     {{ block "center_head" . }}{{ end }}
     {{ block "center_main" . }}{{ end }}
 </div>
-</body>
-
 {{ block "copyright" . }}{{ end }}
-
+</body>
 </html>

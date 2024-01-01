@@ -29,9 +29,6 @@
     margin: 0;
 }
 
-.center_main_projects_list {
-}
-
 .site-nav {
     /* display: inline-flex; */
     margin-top: 2em;
@@ -69,5 +66,6 @@
 }
 
 .top {
-    display: none;
+    display: block;
+    text-decoration: none;
 }
